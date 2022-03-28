@@ -1,0 +1,72 @@
+#portfolio h1,
+#portfolio .icon-container i,
+#lightBox .icon-container i,
+#lightBox > h1 {
+  color: #2c3e50 !important;
+}
+#portfolio .icon-container::after,
+#portfolio .icon-container::before,
+#lightBox .icon-container::before,
+#lightBox .icon-container::after {
+  background-color: #2c3e50;
+}
+.img-container {
+  position: relative;
+  transition: all 1s;
+}
+.img-layer i {
+  font-size: 8rem !important;
+}
+.img-layer {
+  background-color: rgba(26, 188, 156, 0.8);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.img-container:hover .img-layer {
+  opacity: 1;
+}
+.lightBox-container {
+  background-color: rgba(0, 0, 0, 0.171);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+}
+.layer {
+  border-radius: 0.75rem;
+  margin-top: -4rem;
+}
+.layer button {
+  background-color: #1abc9c;
+  color: white;
+  padding: 0.5rem 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.layer button:hover {
+  color: white;
+}
+.layer > i {
+  color: #1abc9c;
+  align-self: flex-end;
+  font-size: 3rem !important;
+  margin: 0.5rem 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  #lightBox h1 {
+    font-size: 3.4rem !important;
+  }
+}
